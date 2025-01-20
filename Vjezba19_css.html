@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+    * { 
+        margin: 0; 
+        padding: 0; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    } 
+    header {
+        background-position: fixed;
+        background-repeat: no-repeat;
+        height: 250px;
+        background-size:cover;
+        background-image: url("/Users/filip.turkalj/Downloads/images/51792-HEADER-1-M.webp");
+    }
+    header h1 {
+        text-align: center;
+        padding: 20% 0 0 0;
+        color:#e7e7e7;
+    }
+    @media only screen and  (min-width: 700px) { 
+        header {
+            background-image: url("/Users/filip.turkalj/Downloads/images/51792-HEADER-1-T.webp");
+            height: 330px;
+        }
+    }
+    @media only screen and  (min-width: 990px) { 
+        header {
+            background-image: url("/Users/filip.turkalj/Downloads/images/51792-HEADER-1-D.webp");
+            height: 100vh;
+        }
+        header h1 {
+            font-size: 30px;
+        }
+    }
+    main {
+        padding: 20px 10px;
+    }
+    h1 {
+        font-size: 22px;
+        margin: 10px 0;
+    }
+    p {
+        line-height: 24px;
+    }
+    nav ul {
+         list-style: none; 
+         display: flex;
+         justify-content: center;
+         position: relative;
+         top: -50px;
+    }
+    nav li {
+        margin: 0 10px;
+    } 
+    nav a { 
+        color: white; 
+        background: black; 
+        font-weight: bold; 
+        display: block; 
+        padding: 15px; 
+        font-size: 15px; 
+        text-decoration: none; 
+        text-align: center; 
+    } 
+    nav a:hover { 
+        background: darkgray; 
+    }
+    footer {
+        background-color: black;
+        padding: 10px 0;
+        margin-top: 10px;
+        text-align: center;
+        color: white
+    }
+    .watches{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px 0;
+    }
+    .watch {
+        width: 30%;
+        margin-bottom: 20px;
+        border: 1px solid #ddd; 
+        padding: 10px; 
+        text-align: center; 
+    } 
+    .watch img { 
+        width: 100%; 
+        height: auto;
+    } 
+    .watch h2 { 
+        font-size: 20px; 
+        margin: 10px 0; 
+    } 
+    .watch p { 
+        font-size: 16px; 
+        margin: 5px 0; 
+    } 
+    .watch .price { 
+        font-size: 18px; 
+        font-weight: bold; 
+        color: #555; 
+    }
+</style>
+<body>
+    <header>
+        <h1>MARQ &reg; TOOL WATCH COLLECTION</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">Homepage</a></li>
+            <li><a href="">Articles</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>LUXURY SMARTWATCHES</h1>
+        <div class="watches">
+            <div class="watch">
+                <img src="/Users/filip.turkalj/Downloads/images/cf-xl.webp" alt="Watch 1">
+                <h2>MARQ Adventurer Gen 2</h2>
+                <p>MARQ Adventurer (Gen 2) s hibridnim remenom od kože i FKM gume</p>
+                <div class="price">Price: $2500</div>
+            </div>
+            <div class="watch">
+                <img src="/Users/filip.turkalj/Downloads/images/cf-xl2.webp" alt="Watch 2">
+                <h2>MARQ Golfer Gen 2</h2>
+                <p>MARQ Golfer (Gen 2) - Carbon Edition s crnim/zelenim hibridnim kožnim i FKM gumenim remenom</p>
+                <div class="price">Price: $2700</div>
+            </div>
+            <div class="watch">
+                <img src="/Users/filip.turkalj/Downloads/images/cf-xl3.webp" alt="Watch 3">
+                <h2>MARQ Captain Gen 2</h2>
+                <p>MARQ Captain (Gen 2) s prugastim remenom od jacquard tkanine i najlona</p>
+                <div class="price">Price: $2900</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; Filip Turkalj
+    </footer>
+</body>
+</html>
